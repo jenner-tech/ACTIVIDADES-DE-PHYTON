@@ -1,13 +1,10 @@
-#cadena de texto
+#agregar datos a n archivo
 
-mensaje="Bienvenidos al mundo de la programacion en PHYTON"
-longitudMensaje=len(mensaje)
-print(f"La longitud de {mensaje} es: {longitudMensaje} ")
+texto = input("Ingrese texto para agregar al archivo salida.txt: ")
 
-for letra in mensaje:
-    print(letra)
+with open("salida.txt","a", encoding="utf-8") as archivo:
+    texto = input("Ingrese texto para agregar al archivo salida.txt: ")
+    archivo.write(f"{texto}\n")
+    print("Se ha modificado el archivo")
     
-print(mensaje[0:4])
-
-if "programacion" in mensaje:
-    print("Si existe....")
+    
