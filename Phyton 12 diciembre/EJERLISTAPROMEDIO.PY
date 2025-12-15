@@ -1,5 +1,14 @@
 #Funcion que retorna el promedio de los numeros de una lista
 def obtenerPromedioLista(numeros):
+    """_summary_
+    Retorna el promedio de los numeros de una lista
+
+    Args:
+        numeros (List): lista de numeros
+
+    Returns:
+        float: promedio
+    """
     suma=0
     cantidadNumeros = len(numeros)
     
