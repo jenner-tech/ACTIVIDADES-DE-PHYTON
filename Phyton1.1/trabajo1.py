@@ -20,7 +20,9 @@ try:
     lineas = archivo.readlines()
     print(type(lineas))
     print(lineas)
+    for linea in lineas:
+        print(linea)
+        
 except IOError as error:
     print("Archivo no existe")
     
-
